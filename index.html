@@ -4,32 +4,34 @@
     <meta charset="UTF-8">
     <title>Rick and Morty</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Hind:400,600%7CSource+Sans+Pro:400,600,700%7CFresca"
+          rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
 </head>
 <body>
 <header class="header">
     <div class="header-wrap">
-        <div class="logo">
-            <img class="header-logo" src="img/logo.png" alt="logo" title="logo">
+        <div class="header-logo"></div>
+        <div class="header-nav">
+            <div class="social">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="https://www.facebook.com/RickandMorty/">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/rickandmorty/?hl=ru">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/rickandmorty">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <nav class="navigation">
+                <a class="nav_item overlay" href="#">Blog</a>
+                <a class="nav_item overlay" href="#">About</a>
+                <a class="nav_item overlay" href="#">Contact</a>
+            </nav>
         </div>
-        <div class="social">
-            <i class="fas fa-search"></i>
-            <a href="https://www.facebook.com/RickandMorty/">
-                <i class="fab fa-facebook"></i>
-            </a>
-            <a href="https://www.instagram.com/rickandmorty/?hl=ru">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://twitter.com/rickandmorty">
-                <i class="fab fa-twitter"></i>
-            </a>
-        </div>
-        <nav class="navigation">
-            <a class="nav_item overlay" href="#">Blog</a>
-            <a class="nav_item overlay" href="#">About</a>
-            <a class="nav_item overlay" href="#">Contact</a>
-        </nav>
         <nav class="hamburger">
             <label>
                 <input type="checkbox">
@@ -38,85 +40,112 @@
             <span></span>
             <span></span>
             <ul class="menu">
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a class="nav_item overlay" href="#">Blog</a></li>
+                <li><a class="nav_item overlay" href="#">About</a></li>
+                <li><a class="nav_item overlay" href="#">Contact</a></li>
             </ul>
         </nav>
     </div>
 </header>
-<main class="maim-section">
-    <div class="post">
-        <img class="post-img" src="img/posts/post-1.png" alt="pilot" title="Pilot">
-        <h3 class="title">Pilot</h3>
-        <p class="post-date">April 5, 2019</p>
-        <p class="description">
-            Rick, in a drunken state, takes his grandson, Morty, for a ride in his flying car and
-            rambles on about how he plans to use a neutrino bomb to wipe out all life on Earth.
-        </p>
-        <p class="rating"><i class="fas fa-thumbs-up"></i> 199</p>
-        <p class="comment-count"><i class="fas fa-comment"></i> 95</p>
-    </div>
-    <div class="post">
-        <img class="post-img" src="img/posts/post-2.png" alt="lawnmower_dog" title="Lawnmower Dog">
-        <h3 class="title">Lawnmower Dog</h3>
-        <p class="post-date">April 28, 2019</p>
-        <p class="description">
-            Rick and Morty find themselves in a dangerous situation, where they are forced to repeatedly enter
-            dreams within dreams to escape. Eventually, they are chased by a dream character named Scary Terry
-        </p>
-        <p class="rating"><i class="fas fa-thumbs-up"></i> 153</p>
-        <p class="comment-count"><i class="fas fa-comment"></i> 102</p>
-    </div>
-    <div class="post">
-        <img class="post-img" src="img/posts/post-3.png" alt="anatomy_park" title="Anatomy Park">
-        <h3 class="title">Anatomy Park</h3>
-        <p class="post-date"><i class="fas fa-comment"></i> May 3, 2019</p>
-        <p class="description">
-            On Christmas, Rick sends Morty inside the body of a homeless man to save his life.
-            Inside the man's body is a microscopic enclosure called Anatomy Park, which houses various deadly diseases
-            that escape their enclosures.
-        </p>
-        <p class="rating"><i class="fas fa-thumbs-up"></i> 109</p>
-        <p class="comment-count"><i class="fas fa-comment"></i> 66</p>
-    </div>
-    <div class="post">
-        <img class="post-img" src="img/posts/post-4.jpg" alt="shaym-aliens!" title="M. Night Shaym-Aliens!">
-        <h3 class="title">M. Night Shaym-Aliens!</h3>
-        <p class="post-date">May 8, 2019</p>
-        <p class="description">
-            Aliens hold Rick and Jerry captive in a virtual reality, in an attempt to steal Rick's recipe for
-            Concentrated Dark Matter.
-        </p>
-        <p class="rating"><i class="fas fa-thumbs-up"></i> 210</p>
-        <p class="comment-count"><i class="fas fa-comment"></i> 45</p>
-    </div>
-    <div class="post">
-        <img class="post-img" src="img/posts/post-5.png" alt="meeseeks_and_destroy" title="Meeseeks and Destroy">
-        <h3 class="title">Meeseeks and Destroy</h3>
-        <p class="post-date">June 2, 2019</p>
-        <p class="description">
-            Rick decides to steal the giant's treasure and give it to the villagers. The giant dies by accident,
-            Rick and Morty are charged with murder but are ultimately acquitted.
-        </p>
-        <p class="rating"><i class="fas fa-thumbs-up"></i> 186</p>
-        <p class="comment-count"><i class="fas fa-comment"></i> 83</p>
-    </div>
-    <div class="post">
-        <img class="post-img" src="img/posts/post-6.png" alt="raising_gazorpazory" title="Raising Gazorpazory">
-        <h3 class="title">Raising Gazorpazory</h3>
-        <p class="post-date">June 18, 2019</p>
-        <p class="description">
-            In a pawn shop in space, Rick buys Morty a sex robot. Soon after, the robot conceives Morty's alien hybrid
-            child whom he names Morty Jr.
-        </p>
-        <p class="rating"><i class="fas fa-thumbs-up"></i> 119</p>
-        <p class="comment-count"><i class="fas fa-comment"></i> 85</p>
+<main class="content">
+    <div class="posts-section">
+        <div class="post">
+            <div class="post-img">
+                <img class="post-img" src="img/posts/post-1.png" alt="pilot" title="Pilot">
+            </div>
+            <h3 class="post-title">Pilot</h3>
+            <p class="post-description">
+                Rick, in a drunken state, takes his grandson, Morty, for a ride in his flying car and
+                rambles on about how he plans to use a neutrino bomb to wipe out all life on Earth.
+            </p>
+            <div class="post-info">
+                <p class="post-date">April 5, 2019</p>
+                <p class="rating"><i class="fas fa-thumbs-up"></i> 199</p>
+                <p class="comment-count"><i class="fas fa-comment"></i> 95</p>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-img">
+                <img src="img/posts/post-2.png" alt="lawnmower_dog" title="Lawnmower Dog">
+            </div>
+            <h3 class="post-title">Lawnmower Dog</h3>
+            <p class="post-description">
+                Rick and Morty find themselves in a dangerous situation, where they are forced to repeatedly enter
+                dreams within dreams to escape. Eventually, they are chased by a dream character named Scary Terry
+            </p>
+            <div class="post-info">
+                <p class="post-date">April 28, 2019</p>
+                <p class="rating"><i class="fas fa-thumbs-up"></i> 153</p>
+                <p class="comment-count"><i class="fas fa-comment"></i> 102</p>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-img">
+                <img src="img/posts/post-3.png" alt="anatomy_park" title="Anatomy Park">
+            </div>
+            <h3 class="post-title">Anatomy Park</h3>
+            <p class="post-description">
+                On Christmas, Rick sends Morty inside the body of a homeless man to save his life.
+                Inside the man's body is a microscopic enclosure called Anatomy Park, which houses various deadly
+                diseases
+                that escape their enclosures.
+            </p>
+            <div class="post-info">
+                <p class="post-date"><i class="fas fa-comment"></i> May 3, 2019</p>
+                <p class="rating"><i class="fas fa-thumbs-up"></i> 109</p>
+                <p class="comment-count"><i class="fas fa-comment"></i> 66</p>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-img">
+                <img src="img/posts/post-4.jpg" alt="shaym-aliens!" title="M. Night Shaym-Aliens!">
+            </div>
+            <h3 class="post-title">M. Night Shaym-Aliens!</h3>
+            <p class="post-description">
+                Aliens hold Rick and Jerry captive in a virtual reality, in an attempt to steal Rick's recipe for
+                Concentrated Dark Matter.
+            </p>
+            <div class="post-info">
+                <p class="post-date">May 8, 2019</p>
+                <p class="rating"><i class="fas fa-thumbs-up"></i> 210</p>
+                <p class="comment-count"><i class="fas fa-comment"></i> 45</p>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-img">
+                <img src="img/posts/post-5.png" alt="meeseeks_and_destroy" title="Meeseeks and Destroy">
+            </div>
+            <h3 class="post-title">Meeseeks and Destroy</h3>
+            <p class="post-description">
+                Rick decides to steal the giant's treasure and give it to the villagers. The giant dies by accident,
+                Rick and Morty are charged with murder but are ultimately acquitted.
+            </p>
+            <div class="post-info">
+                <p class="post-date">June 2, 2019</p>
+                <p class="rating"><i class="fas fa-thumbs-up"></i> 186</p>
+                <p class="comment-count"><i class="fas fa-comment"></i> 83</p>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-img">
+                <img src="img/posts/post-6.png" alt="raising_gazorpazory" title="Raising Gazorpazory">
+            </div>
+            <h3 class="post-title">Raising Gazorpazory</h3>
+            <p class="post-description">
+                In a pawn shop in space, Rick buys Morty a sex robot. Soon after, the robot conceives Morty's alien
+                hybrid
+                child whom he names Morty Jr.
+            </p>
+            <div class="post-info">
+                <p class="post-date">June 18, 2019</p>
+                <p class="rating"><i class="fas fa-thumbs-up"></i> 119</p>
+                <p class="comment-count"><i class="fas fa-comment"></i> 85</p>
+            </div>
+        </div>
     </div>
 </main>
 <aside class="aside-section">
     <div class="author-info">
-
     </div>
     <div class="aside-social">
         <a href="https://www.facebook.com/RickandMorty/">
@@ -147,7 +176,6 @@
         <button class="btn btn-search">Search</button>
     </div>
     <div class="tags">
-
     </div>
     <div class="comments">
         <div class="comment-1">
@@ -185,11 +213,11 @@
     </div>
 </aside>
 <footer class="footer">
-    <img class="footer-logo" src="img/logo.png" alt="logo" title="logo">
+    <div class="footer-logo"></div>
     <div class="contact">
-        <i class="fas fa-envelope"></i>
-        <i class="fab fa-telegram-plane"></i>
-        <i class="fab fa-facebook-messenger"></i>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+        <a href="#"><i class="fab fa-telegram-plane"></i></a>
+        <a href="#"><i class="fab fa-facebook-messenger"></i></a>
     </div>
 </footer>
 </body>

@@ -1,1 +1,47 @@
-$testVar: green;
+$mainBgColor: #21232E;
+$footerHeight: 100px;
+
+%additionalBgColor {
+  background-color: #010629;
+}
+
+.header,
+.footer {
+  @extend %additionalBgColor
+}
+
+%logoSize {
+  width: 10%;
+}
+
+.header-logo,
+.footer-logo {
+  @extend %logoSize
+}
+
+%mainFont {
+  font-family: 'Hind', sans-serif;
+  color: aliceblue;
+}
+
+.nav_item,
+.post-title {
+  @extend %mainFont
+}
+
+
+body {
+  background-color: $mainBgColor;
+}
+
+.fas, .fab {
+  color: white;
+}
+
+i {
+  font-size: 30px;
+}
+
+img, .content img {
+  width: 200px;
+}
