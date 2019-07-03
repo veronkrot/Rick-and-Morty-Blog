@@ -1,1 +1,1 @@
-# Rick-and-Morty-Blog
+# Blog about Rick and Morty adventure.
