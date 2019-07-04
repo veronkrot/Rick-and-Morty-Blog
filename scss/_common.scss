@@ -1,6 +1,14 @@
 $mainBgColor: #3b002d;
+$commentBgColor: #722845;
 $footerHeight: 100px;
-%contentBgColor{
+
+%iconStyle {
+  letter-spacing: 10px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+%contentBgColor {
   background-color: #211030;
 }
 
@@ -47,17 +55,7 @@ $footerHeight: 100px;
   @extend %mainFont
 }
 
-
-body {
-  background-color: $mainBgColor;
-
-  }
-
-.fas, .fab {
-  color: white;
-}
-
-i {
-  font-size: 30px;
+%hoverColor {
+  color: #3da0ad;
 }
 

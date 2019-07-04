@@ -1,5 +1,106 @@
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   body {
-  display: grid;
+    display: block;
+
+    > .header {
+      margin-bottom: 2%;
+      > .header-wrap {
+        > .header-logo {
+          margin: auto;
+          width: 30%;
+        }
+
+        > .header-nav {
+          margin: 0;
+          display: block;
+
+          > .social {
+            margin-right: 0;
+
+            > a {
+              &:first-child {
+                margin: 5px 0 5px 5px;
+              }
+
+              &:not(:first-of-type) {
+                display: none;
+              }
+            }
+          }
+
+          > .navigation {
+            display: none;
+          }
+        }
+
+        > .hamburger {
+          display: block;
+          margin: 5px;
+        }
+      }
+    }
+
+    > .aside-section {
+      &:first-of-type {
+        display: block;
+
+        > .author {
+          grid-template-rows: 0fr 0fr 0fr;
+
+          > .author-info {
+            > .author-avatar {
+              display: flex;
+              justify-content: center;
+              flex-direction: column;
+              align-items: center;
+
+              > img {
+                width: 65%;
+              }
+            }
+
+            > .author-description {
+              margin-top: -10%;
+            }
+          }
+        }
+      }
+
+      &:not(:first-of-type) {
+        grid-template-rows: 5% 6% 19% 6% 13% 50%;
+        grid-gap: 1%;
+        > .author {
+          display: none;
+        }
+        > .search-section {
+          > form {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            > button {
+              width: 15%;
+            }
+          }
+        }
+        &:after {
+          content: '';
+          grid-gap: 0;
+        }
+      }
+    }
+    > .content {
+      padding: 2%;
+    }
+
+    > .footer {
+      padding-top: 5%;
+      > .footer-logo {
+        margin: auto;
+        width: 30%;
+      }
+      > .contact {
+        display: none;
+      }
+    }
   }
 }
