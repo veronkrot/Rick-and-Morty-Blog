@@ -5,8 +5,7 @@
     <title>Rick and Morty</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Hind:400,600%7CSource+Sans+Pro:400,600,700%7CFresca"
-          rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
 </head>
 <body>
@@ -71,7 +70,7 @@
             <h3 class="post-title">Lawnmower Dog</h3>
             <p class="post-description">
                 Rick and Morty find themselves in a dangerous situation, where they are forced to repeatedly enter
-                dreams within dreams to escape. Eventually, they are chased by a dream character named Scary Terry
+                dreams within dreams to escape.
             </p>
             <div class="post-info">
                 <p class="post-date">April 28, 2019</p>
@@ -86,12 +85,10 @@
             <h3 class="post-title">Anatomy Park</h3>
             <p class="post-description">
                 On Christmas, Rick sends Morty inside the body of a homeless man to save his life.
-                Inside the man's body is a microscopic enclosure called Anatomy Park, which houses various deadly
-                diseases
-                that escape their enclosures.
+                Inside the man's body is a microscopic enclosure called Anatomy Park.
             </p>
             <div class="post-info">
-                <p class="post-date"><i class="fas fa-comment"></i> May 3, 2019</p>
+                <p class="post-date">May 3, 2019</p>
                 <p class="rating"><i class="fas fa-thumbs-up"></i> 109</p>
                 <p class="comment-count"><i class="fas fa-comment"></i> 66</p>
             </div>
@@ -103,7 +100,7 @@
             <h3 class="post-title">M. Night Shaym-Aliens!</h3>
             <p class="post-description">
                 Aliens hold Rick and Jerry captive in a virtual reality, in an attempt to steal Rick's recipe for
-                Concentrated Dark Matter.
+                Concentrated Dark Matter. Rick finally games the aliens by giving them a fake recipe.
             </p>
             <div class="post-info">
                 <p class="post-date">May 8, 2019</p>
@@ -145,9 +142,24 @@
     </div>
 </main>
 <aside class="aside-section">
-    <div class="author-info">
+    <div class="author">
+        <div class="author-info-title">
+            <h3>
+                Author of the Blog
+            </h3>
+        </div>
+        <div class="author-info">
+            <div class="author-avatar">
+                <img src="img/avatars/author-avatar.jpg" alt="avatar">
+            </div>
+            <p class="name">Mr. Poopybutthole</p>
+            <p class="author-description">
+                Mr. Poopybutthole is a very good friend to the Smith Family, from another dimension where he is a planet
+                wide superstar. He has taken refuge with the Smiths so he can live a normal life.
+            </p>
+        </div>
     </div>
-    <div class="aside-social">
+    <div class="social-icons">
         <a href="https://www.facebook.com/RickandMorty/">
             <i class="fab fa-facebook"></i>
         </a>
@@ -159,58 +171,85 @@
         </a>
     </div>
     <div class="subscribe-section">
-        <p>Name: </p>
-        <label>
-            <input class="input-name" type="text" placeholder="Enter your name">
-        </label>
-        <p>E-mail: </p>
-        <label>
-            <input class="input-e-mail" type="text" placeholder="Enter your e-mail">
-        </label>
-        <button class="btn btn-subscribe">Subscribe</button>
+        <form>
+            <div class="form-control">
+                <label>Name:<input class="input-name" type="text" placeholder="Enter your name"></label>
+            </div>
+            <div class="form-control">
+                <label>E-mail:<input class="input-e-mail" type="text" placeholder="Enter your e-mail"></label>
+            </div>
+            <div class="form-control">
+                <button class="btn btn-subscribe" type="submit">Subscribe</button>
+            </div>
+        </form>
     </div>
-    <div class="search">
-        <label>
-            <input class="input-search" type="text" placeholder="Find something">
-        </label>
-        <button class="btn btn-search">Search</button>
+    <div class="search-section">
+        <form>
+            <label>
+                <input class="input-search" type="text" placeholder="Find something">
+            </label>
+            <button class="btn btn-search" type="submit">Search</button>
+        </form>
     </div>
     <div class="tags">
+        <ul class="cloud">
+            <li>rickall</li>
+            <li>assimilation</li>
+            <li>rick</li>
+            <li>morty</li>
+            <li>summer</li>
+            <li>wasteland</li>
+            <li>froopyland</li>
+            <li>picklerick</li>
+            <li>morty</li>
+            <li>mortysmith</li>
+            <li>life</li>
+            <li>wubbalubbadubdub</li>
+            <li>rickandmortyforever</li>
+            <li>dirtymorty</li>
+            <li>ricksanchez</li>
+            <li>gang</li>
+            <li>sk</li>
+            <li>freya</li>
+            <li>mortyarmy</li>
+            <li>interdimensionalcabel</li>
+        </ul>
     </div>
     <div class="comments">
-        <div class="comment-1">
+        <div class="comment">
             <div class="avatar">
-                <img src="img/avatars/avatar-1.png" alt="avatar">
+                <img class="comment-avatar" src="img/avatars/avatar-1.png" alt="avatar">
             </div>
-            <p class="name">Vicky Barrett</p>
+            <p class="user-name">Rick Sanchez</p>
             <p class="time-ago">10 minutes ago</p>
-            <p class="coment">That stolen figurine shot the sheriff.</p>
+            <p class="comment-text">That stolen figurine shot the sheriff.</p>
         </div>
-        <div class="comment-2">
+        <div class="comment">
             <div class="avatar">
-                <img src="img/avatars/avatar-2.png" alt="avatar">
+                <img class="comment-avatar" src="img/avatars/avatar-2.png" alt="avatar">
             </div>
-            <p class="name">Misty George</p>
+            <p class="user-name">Morty Smith</p>
             <p class="time-ago">40 minutes ago</p>
-            <p class="coment">A stumbling first step runs through everything.</p>
+            <p class="comment-text">A stumbling first step runs through everything.</p>
         </div>
-        <div class="comment-3">
+        <div class="comment">
             <div class="avatar">
-                <img src="img/avatars/avatar-3.png" alt="avatar">
+                <img class="comment-avatar" src="img/avatars/avatar-3.jpg" alt="avatar">
             </div>
-            <p class="name">Jeffery Wells</p>
+            <p class="user-name">Summer Smith</p>
             <p class="time-ago">6 hours ago</p>
-            <p class="coment">The sky is omni-present, much like candy.</p>
+            <p class="comment-text">The sky is omni-present, much like candy.</p>
         </div>
-        <div class="comment-4">
+        <div class="comment">
             <div class="avatar">
-                <img src="img/avatars/avatar-4.png" alt="avatar">
+                <img class="comment-avatar" src="img/avatars/avatar-4.jpg" alt="avatar">
             </div>
-            <p class="name">Dennis Nelson</p>
+            <p class="user-name">Snuffles</p>
             <p class="time-ago">1 day ago</p>
-            <p class="coment">A passionate evening shoots pineapples with a machinegun.</p>
+            <p class="comment-text">A passionate evening shoots pineapples with a machinegun.</p>
         </div>
     </div>
+
 </aside>
 <footer class="footer">
     <div class="footer-logo"></div>

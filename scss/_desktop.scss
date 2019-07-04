@@ -1,4 +1,15 @@
 @media screen {
+
+  %iconStyle {
+    letter-spacing: 10px;
+    text-decoration: none;
+    font-size: 25px;
+  }
+
+  %btnStyle {
+
+  }
+
   body {
     margin: 0;
     display: grid;
@@ -6,6 +17,7 @@
     grid-template-areas: "header header header header header" ". main main aside ." "footer footer footer footer footer";
     position: relative;
     grid-gap: .5% .5%;
+
     *:after {
       position: absolute;
       top: 0;
@@ -48,9 +60,7 @@
             }
 
             > a > i {
-              letter-spacing: 10px;
-              text-decoration: none;
-              font-size: 25px;
+              @extend %iconStyle
             }
 
           }
@@ -92,10 +102,6 @@
           height: fit-content;
 
           > .post-img {
-            order: 0;
-            flex: 0 1 auto;
-            align-self: center;
-
             > img {
               width: 100%;
             }
@@ -106,12 +112,19 @@
           }
 
           > .post-description {
-            // TODO: change color
-            color: white;
+            text-align: justify;
+            font-family: 'Hind', sans-serif;
+            font-weight: lighter;
+            line-height: 20px;
+            color: lightgray;
+            margin: auto;
+            padding: 0 5%;
           }
 
           > .post-info {
             width: -webkit-fill-available;
+            padding-left: 5%;
+            padding-right: 5%;
 
             > p {
               display: inline-block;
@@ -121,6 +134,7 @@
                 font-size: 16px;
               }
             }
+
             > p:not(:first-child) {
               float: right;
               margin-left: 5%;
@@ -133,9 +147,212 @@
 
     > .aside-section {
       grid-area: aside;
-      > .aside-social {
+      display: grid;
+      grid-template-rows: 16.5% 4% 12% 4% 10% 30%;
+      grid-template-areas: "author" "social" "subscribe" "search" "tags" "comments";
+      grid-gap: 0.5%;
+
+      > .author {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "header header" "content content" ". .";
+        grid-area: author;
+
+        > .author-info-title {
+          grid-area: header;
+          display: flex;
+          justify-content: center;
+        }
+
+        > .author-info {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+          grid-template-areas: "image title title" "image info info";
+          grid-area: content;
+          padding: 2%;
+
+          > .name {
+            grid-area: title;
+            display: flex;
+            justify-content: center;
+            margin-top: 0;
+          }
+
+          > .author-avatar {
+            grid-area: image;
+
+            > img {
+              width: 85%;
+              border-radius: 50%;
+            }
+          }
+
+          > .author-description {
+            margin-top: -17%;
+            grid-area: info;
+            font-size: small;
+          }
+        }
+
+      }
+
+      > .social-icons {
+        grid-area: social;
+        display: flex;
+        justify-content: center;
+        padding: 3%;
+
         > a {
-          text-decoration: none;
+          > i {
+            @extend %iconStyle;
+          }
+        }
+      }
+
+      > .subscribe-section {
+        grid-area: subscribe;
+        display: flex;
+        justify-content: center;
+
+        > form {
+          > .form-control {
+            padding-top: 6%;
+            display: block;
+            width: 140px;
+
+            > label {
+              white-space: pre-line;
+            }
+            > button {
+              width: 116%;
+              height: 30px;
+              background-color: rebeccapurple;
+              border: 0;
+            }
+          }
+        }
+      }
+
+      > .search-section {
+        grid-area: search;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        > form {
+          width: 84%;
+          > button {
+            width: 29%;
+            height: 30px;
+            background-color: rebeccapurple;
+            border: 0;
+            margin-left: 1%;
+          }
+        }
+      }
+
+      > .tags {
+        grid-area: tags;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        > .cloud {
+          display: inline;
+          list-style-type: none;
+          font-size: smaller;
+          padding: 0;
+
+          > li {
+            list-style: none;
+            display: inline;
+
+            &:hover {
+              color: rgb(random(255), random(255), random(255));
+            }
+
+            &:nth-of-type(3n + 1) {
+              font-size: 1.25em;
+              color: rgb(random(255), random(255), random(255));
+
+              &:hover {
+                color: rgb(random(255), random(255), random(255));
+              }
+            }
+
+            &:nth-of-type(4n+3) {
+              font-size: 1.5em;
+              color: rgb(random(255), random(255), random(255));
+
+              &:hover {
+                color: rgb(random(255), random(255), random(255));
+              }
+            }
+
+            &:nth-of-type(5n - 3) {
+              font-size: 1em;
+              color: rgb(random(255), random(255), random(255));
+
+              &:hover {
+                color: rgb(random(255), random(255), random(255));
+              }
+            }
+          }
+
+        }
+      }
+
+      > .comments {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 23.5%);
+        grid-gap: 2% 2%;
+        grid-area: comments;
+
+        > .comment {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 20% 1fr;
+          grid-template-areas: "img name date" "img text text";
+          margin: 3%;
+          background-color: red;
+
+          > .avatar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            grid-area: img;
+
+            > .comment-avatar {
+              width: 80px;
+              height: 80px;
+              border-radius: 50%;
+            }
+          }
+
+          > .user-name {
+            grid-area: name;
+            font-weight: bold;
+            margin-top: 4.8%;
+          }
+
+          > .time-ago {
+            grid-area: date;
+            margin-top: 5.8%;
+            font-size: small;
+          }
+
+          > .comment-text {
+            grid-area: text;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 90%;
+            margin-top: 5.6%;
+            font-size: smaller;
+          }
         }
       }
     }
@@ -162,9 +379,7 @@
         margin-right: 10px;
 
         > a > i {
-          letter-spacing: 10px;
-          text-decoration: none;
-          font-size: 25px;
+          @extend %iconStyle
         }
       }
 
