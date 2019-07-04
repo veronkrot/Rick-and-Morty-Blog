@@ -22,19 +22,20 @@ body > .header > .header-wrap > .header-nav > .social > a > i, body > .aside-sec
 
 .nav_item,
 .post-title,
+.post-info,
 .author,
 .comment,
 .tags,
 .subscribe-section,
 .search-section {
   font-family: 'Hind', sans-serif;
-  color: #edf1f7; }
+  color: #dadfe8; }
 
 i:hover, body > .header > .header-wrap > .header-nav > .navigation > .nav_item:hover {
   color: #3da0ad; }
 
 .fas, .fab {
-  color: white; }
+  color: #dadfe8; }
 
 i {
   font-size: 30px; }
@@ -213,7 +214,7 @@ body {
           grid-area: title;
           display: flex;
           justify-content: center;
-          margin-top: 0; }
+          margin-top: -2%; }
         body > .aside-section > .author > .author-info > .author-avatar {
           grid-area: image; }
           body > .aside-section > .author > .author-info > .author-avatar > img {
@@ -241,8 +242,9 @@ body {
         body > .aside-section > .subscribe-section > form > .form-control > button {
           width: 116%;
           height: 30px;
-          background-color: rebeccapurple;
-          border: 0; }
+          background-color: #cb5a26;
+          border: 0;
+          border-radius: 5%; }
     body > .aside-section > .search-section {
       grid-area: search;
       display: flex;
@@ -253,8 +255,9 @@ body {
         body > .aside-section > .search-section > form > button {
           width: 29%;
           height: 30px;
-          background-color: rebeccapurple;
+          background-color: #cb5a26;
           border: 0;
+          border-radius: 5%;
           margin-left: 1%; }
     body > .aside-section > .tags {
       grid-area: tags;
@@ -270,22 +273,22 @@ body {
           list-style: none;
           display: inline; }
           body > .aside-section > .tags > .cloud > li:hover {
-            color: #1b59bf; }
+            color: #0a1aba; }
           body > .aside-section > .tags > .cloud > li:nth-of-type(3n + 1) {
             font-size: 1.25em;
-            color: #a8815a; }
+            color: #92d4c5; }
             body > .aside-section > .tags > .cloud > li:nth-of-type(3n + 1):hover {
-              color: #79fcee; }
+              color: #6e7c34; }
           body > .aside-section > .tags > .cloud > li:nth-of-type(4n+3) {
             font-size: 1.5em;
-            color: #296696; }
+            color: #67ffc2; }
             body > .aside-section > .tags > .cloud > li:nth-of-type(4n+3):hover {
-              color: #ddf319; }
+              color: #e71812; }
           body > .aside-section > .tags > .cloud > li:nth-of-type(5n - 3) {
             font-size: 1em;
-            color: #f95b3c; }
+            color: #70c96e; }
             body > .aside-section > .tags > .cloud > li:nth-of-type(5n - 3):hover {
-              color: #d564ff; }
+              color: #c42f8d; }
     body > .aside-section > .comments {
       display: grid;
       grid-template-columns: 1fr;

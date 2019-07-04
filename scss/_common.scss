@@ -1,6 +1,12 @@
 $mainBgColor: #3b002d;
 $commentBgColor: #722845;
+$btnColor: #cb5a26;
+$contentBgColor: #211030;
+$fontColor: #dadfe8;
+$iconColor: #dadfe8;
+$hoverColor: #3da0ad;
 $footerHeight: 100px;
+$headerHeight: 100px;
 
 %iconStyle {
   letter-spacing: 10px;
@@ -9,7 +15,7 @@ $footerHeight: 100px;
 }
 
 %contentBgColor {
-  background-color: #211030;
+  background-color: $contentBgColor;
 }
 
 .post,
@@ -42,11 +48,12 @@ $footerHeight: 100px;
 
 %mainFont {
   font-family: 'Hind', sans-serif;
-  color: #edf1f7;
+  color: $fontColor;
 }
 
 .nav_item,
 .post-title,
+.post-info,
 .author,
 .comment,
 .tags,
