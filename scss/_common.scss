@@ -1,8 +1,21 @@
-$mainBgColor: #21232E;
+$mainBgColor: #3b002d;
 $footerHeight: 100px;
+%contentBgColor{
+  background-color: #211030;
+}
+
+.post,
+.author,
+.social-icons,
+.subscribe-section,
+.search-section,
+.tags,
+.comments {
+  @extend %contentBgColor;
+}
 
 %additionalBgColor {
-  background-color: #010629;
+  background-image: linear-gradient(-120deg, #010629, #97334E, #e66e12);
 }
 
 .header,
@@ -21,18 +34,24 @@ $footerHeight: 100px;
 
 %mainFont {
   font-family: 'Hind', sans-serif;
-  color: aliceblue;
+  color: #edf1f7;
 }
 
 .nav_item,
-.post-title {
+.post-title,
+.author,
+.comment,
+.tags,
+.subscribe-section,
+.search-section {
   @extend %mainFont
 }
 
 
 body {
   background-color: $mainBgColor;
-}
+
+  }
 
 .fas, .fab {
   color: white;
@@ -42,6 +61,3 @@ i {
   font-size: 30px;
 }
 
-img, .content img {
-  width: 200px;
-}
