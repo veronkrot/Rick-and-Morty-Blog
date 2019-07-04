@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Rick and Morty</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
@@ -11,6 +12,19 @@
 <body>
 <header class="header">
     <div class="header-wrap">
+        <nav class="hamburger">
+            <div class="hamburger-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul class="menu">
+                    <li><a class="nav_item overlay" href="#">Blog</a></li>
+                    <li><a class="nav_item overlay" href="#">About</a></li>
+                    <li><a class="nav_item overlay" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
         <div class="header-logo"></div>
         <div class="header-nav">
             <div class="social">
@@ -31,21 +45,27 @@
                 <a class="nav_item overlay" href="#">Contact</a>
             </nav>
         </div>
-        <nav class="hamburger">
-            <label>
-                <input type="checkbox">
-            </label>
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul class="menu">
-                <li><a class="nav_item overlay" href="#">Blog</a></li>
-                <li><a class="nav_item overlay" href="#">About</a></li>
-                <li><a class="nav_item overlay" href="#">Contact</a></li>
-            </ul>
-        </nav>
     </div>
 </header>
+<aside class="aside-section">
+    <div class="author">
+        <div class="author-info-title">
+            <h3>
+                Author of the Blog
+            </h3>
+        </div>
+        <div class="author-info">
+            <div class="author-avatar">
+                <img src="img/avatars/author-avatar.jpg" alt="avatar">
+            </div>
+            <p class="name">Mr. Poopybutthole</p>
+            <p class="author-description">
+                Mr. Poopybutthole is a very good friend to the Smith Family, from another dimension where he is a planet
+                wide superstar. He has taken refuge with the Smiths so he can live a normal life.
+            </p>
+        </div>
+    </div>
+</aside>
 <main class="content">
     <div class="posts-section">
         <div class="post">
@@ -220,7 +240,7 @@
             <div class="avatar">
                 <img class="comment-avatar" src="img/avatars/avatar-1.png" alt="avatar">
             </div>
-            <p class="user-name">Rick Sanchez</p>
+            <p class="user-name">Rick</p>
             <p class="time-ago">10 minutes ago</p>
             <p class="comment-text">That stolen figurine shot the sheriff.</p>
         </div>
@@ -228,7 +248,7 @@
             <div class="avatar">
                 <img class="comment-avatar" src="img/avatars/avatar-2.png" alt="avatar">
             </div>
-            <p class="user-name">Morty Smith</p>
+            <p class="user-name">Morty</p>
             <p class="time-ago">40 minutes ago</p>
             <p class="comment-text">A stumbling first step runs through everything.</p>
         </div>
@@ -236,7 +256,7 @@
             <div class="avatar">
                 <img class="comment-avatar" src="img/avatars/avatar-3.jpg" alt="avatar">
             </div>
-            <p class="user-name">Summer Smith</p>
+            <p class="user-name">Summer</p>
             <p class="time-ago">6 hours ago</p>
             <p class="comment-text">The sky is omni-present, much like candy.</p>
         </div>
